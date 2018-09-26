@@ -1,0 +1,5 @@
+feedback:
+  script:
+  - run_kate . cspark/imc01-intro-to-quantitative-finance:production
+  tags:
+  - kate2.0
