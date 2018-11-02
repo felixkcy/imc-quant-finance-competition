@@ -86,7 +86,7 @@ class TestPricer(unittest.TestCase):
 
         If the call option gives you the right to buy the stock at a price much lower than the current
         market price (spot), the call option price is simply the price of a forward. In this example
-        we use a rate of 5% and the forward price is spot - strike*exp(-rate(tau)).
+        we use a rate of 5% and the forward price is spot - strike*exp(-rate * tau).
 
         Maybe you forget to discount when working backwards in the tree?
         """
