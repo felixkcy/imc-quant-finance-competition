@@ -40,8 +40,9 @@ def pricer(spot, strike, tau, rate, vola, steps=N_STEPS):
     #price = 0
     #for i in range(steps+1):
     #    price += comb(steps, i) * backward[i] * p_star**(steps-i) * q_star**(i)
-    price_arr = comb(steps, tmp_arr) * backward * np.power(p_star, steps-tmp_arr) * np.power(q_star, tmp_arr)
-    price = np.sum(price_arr) * disc_factor
+    #price_arr = comb(steps, tmp_arr) * backward * np.power(p_star, steps-tmp_arr) * np.power(q_star, tmp_arr)
+    #price = np.sum(price_arr) * disc_factor
+    price = np.sum(comb(steps, tmp_arr) * backward * np.power(p_star, steps-tmp_arr) * np.power(q_star, tmp_arr)) * disc_factor
     #for n in reversed(range(steps)):
     #    backward = [backward[i] * (p_star) + backward[i+1] * q_star for i in range(n+1)]
     
