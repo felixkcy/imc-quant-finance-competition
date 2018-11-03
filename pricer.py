@@ -1,3 +1,5 @@
+import numpy as np
+
 # Default number of steps to use.
 # Feel free to change this value and see how it affects your score.
 N_STEPS = 200
