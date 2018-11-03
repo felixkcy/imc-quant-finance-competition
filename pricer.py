@@ -19,6 +19,6 @@ def pricer(spot, strike, tau, rate, vola, steps=N_STEPS):
     :rtype: float
     """
 
-    raise NotImplementedError
+    return 0
 
 
