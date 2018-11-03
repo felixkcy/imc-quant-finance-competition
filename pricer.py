@@ -31,7 +31,7 @@ def pricer(spot, strike, tau, rate, vola, steps=N_STEPS):
     
     p_star = (1 - d) / (u - d)
     for n in reversed(range(N)):
-        backward = [backward[i] * (1 - p_star) + backward[i+1] * p_star for i range(n+1)]
+        backward = [backward[i] * (1 - p_star) + backward[i+1] * p_star for i in range(n+1)]
     
     return backward[0]
 
