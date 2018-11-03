@@ -29,7 +29,7 @@ def pricer(spot, strike, tau, rate, vola, steps=N_STEPS):
     disc_factor = np.exp(-rate*tau)
     
     tmp_arr = np.arange(steps+1)
-    returns = spot * np.power(u, steps-tmp_arr) * np.power(d, tmp_arr) - strike
+    backward = spot * np.power(u, steps-tmp_arr) * np.power(d, tmp_arr) - strike
     #backward = returns - strike
     backward[backward < 0] = 0
     p_star = (np.exp(rate*delta_t) - d) / (u - d)
