@@ -1,4 +1,5 @@
 import numpy as np
+import scipy.stats.comb
 
 # Default number of steps to use.
 # Feel free to change this value and see how it affects your score.
