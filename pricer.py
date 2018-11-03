@@ -3,7 +3,7 @@ from scipy.special import comb
 
 # Default number of steps to use.
 # Feel free to change this value and see how it affects your score.
-N_STEPS = 2000
+N_STEPS = 1000
 
 
 def pricer(spot, strike, tau, rate, vola, steps=N_STEPS):
